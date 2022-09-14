@@ -8,7 +8,7 @@ export function createGetter(path) {
 
     return (obj) => {
         let copyObj = obj;
-        for (const iterator of filds) {
+        for (const iterator of filds) {                      
             if (typeof copyObj[iterator] === "object") {
                 copyObj = copyObj[iterator];
               } else {
